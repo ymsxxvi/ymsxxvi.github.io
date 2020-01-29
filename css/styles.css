@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/*-- fonts --------------------------------------*/
+@font-face {
+    font-family: "ortica";
+    src: url(../fonts/Ortica-Light.otf)
+}
+@font-face {
+    font-family: "publicsans";
+    src: url(../fonts/PublicSans-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "publicsans";
+    src: url(../fonts/PublicSans-Lightitalic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+/*-- fonts END --------------------------------------*/
+
+html {
+    animation: load 1s;
+    scroll-behavior: smooth;
+}
+@keyframes load {
+    0% {opacity: 0%;}
+    100% {opacity: 100%}
+}
+body {
+    margin: 0;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover { 
+    color: #bcbcbc;
+    transition: .25s;
+}
+
+.ortspan {
+    font-family: ortica, serif;
+}
+h1 {
+    font-size: 1.736vw;
+    font-weight: 400;
+    font-family: publicsans, sans-serif;
+}
+h2 {
+    font-size: 0.972vw;
+    font-weight: 400;
+    font-family: publicsans, sans-serif;
+}
+p{
+    font-size: 0.972vw;
+    font-family: ortica, serif;
+    line-height: 1.18vw;
+}
+
+/*-- navigation --------------------------------------*/
+nav {
+    display: block;
+    /*--background-color: #fff;--*/
+    font-size: 14px;
+    text-align: center;
+    /*--border-bottom: solid 1px;--*/
+    line-height: 18px;
+    position: fixed;
+    width: 100%;
+    font-family: publicsans, sans-serif;
+    z-index: 9999;
+}
+nav li {
+    list-style: none;
+}
+nav a, nav ul {
+    margin: .8vh 0;
+}
+nav h2 {
+    margin: auto;
+    font-size: 14px;
+}
+/*-- navigation END --------------------------------------*/
+
+/*-------------------------------------- INDEX --------------------------------------*/
+
+
+.index1 {
+    margin-top: 75vh;
+    position: fixed;
+}
+.index_entry1 {
+    border-top: solid 1px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    height: 100%;
+    margin: 0;
+    padding: 1.7vh 0;
+    font-size: 1.736vw;
+}
+
+.index2 {
+    height: 65vh;
+    padding-top: 5vh;
+}
+.index_entry2{
+    border-right: 1px solid #000;
+}
+/*-- index --------------------------------------*/
+
+/*-- Projects --------------------------------------*/
+.project1, .project2, .project3, .project4 {
+        padding: 15vh 0;
+}
+.pr1_img, .pr2_img, .pr3_img, .pr4_img {
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vw;
+}
+.id_txt{
+    text-align: center;
+    margin:0;
+    padding-top: 2vh;
+}
+p.id_txt{
+    padding-top: .2vh;
+}
+
+
+/*-- Project1 --------------------------------------*/
+
+.pr1_img {
+    background-image: url(../images/SABF/SABF_head.jpg);
+}
+
+/*-- Project2 --------------------------------------*/
+.pr2_img {
+    background-image: url(../images/DSH/DSH_head.jpg);
+}
+
+/*-- Project3 --------------------------------------*/
+.pr3_img {
+    background-image: url(../images/ASHLAR/ASHLAR_head.jpg);
+}
+
+/*-- Project4 --------------------------------------*/
+.pr4_img {
+    background-image: url(../images/MASK/MASK_head.jpg);
+}
+.project4 {
+    margin-bottom: 23vh;
+}
+
+/*-- CASE STUDIES --------------------------------------*/
+#ctr_txt {
+    text-align: center;
+    margin: 0 0 2.2vw 0;
+}
+.blb_line{
+    border-right: 1px solid #000;
+    height: 100%;
+
+}
+.blb div h2, .blb div h1 {
+    text-align: center;
+}
+.blb {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: auto;
+    margin: 3vw 0;
+    padding: 1.7vh 0;
+}
+.blb div h1 {
+    margin: 0 0 2.7vw 0 ;
+}
+#blb_h2 {
+    margin: 2.7vw 0 0.4vw 0 ;
+}
+.blb p {
+    margin: 0;
+}
+.blb div h2 {
+    margin: 0 0 0.4vw 0;
+}
+/*-- SEOUL ART BOOK FAIR --------------------------------------*/
+.SABF_head {
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 8vh;
+}
+.sabf1 {
+    background-image: url(../images/SABF/SABF_head.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35vw;
+}
+.sabf_img1, .sabf_img2 {
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 42vw;
+    margin-bottom: 3vw;
+}
+.sabf_img1 {
+    background-image: url(../images/SABF/SABFad_eng.gif);
+}
+.sabf_img2 {
+    background-image: url(../images/SABF/SABFad_kr.gif);
+}
+
+/* ---------------------- MEDIA QUERIES AHHHHH ---------------------- */
+
+
+/* ---------------------- Phone ---------------------- */
+@media screen and (min-width: 320px) and (max-width:500px){
+    /* -- main things -- */
+    h1 {font-size: 4.34vw;}
+    p {font-size: 2.43vw;}
+    nav div ul {display: none;}
+    /* -- index -- */
+    .index1 {margin-top: 80vh;}
+    .index_entry1 {font-size: 3.5vw; padding: 1vh 0;}
+    .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw;}
+    /* -- SABF -- */
+    .SABFintro {
+        margin-top: 4vw;}
+    }
+
+/* ---------------------- Tablet ---------------------- */
+@media screen and (min-width: 501px) and (max-width:1366px){
+    /* -- main things -- */
+    h1 {font-size: 1.736vw;}
+    p {font-size: 0.972vw;}
+    /* -- index -- */
+    .index1 {margin-top: 77vh;}
+    .index_entry1 {padding: 1vh 0;}
+    .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 35vw;}
+    /* -- SABF -- */
+    .SABFintro {
+    margin-top: 8vh;}
+}
