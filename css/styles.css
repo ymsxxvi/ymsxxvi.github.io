@@ -18,12 +18,11 @@
 }
 /*-- fonts END --------------------------------------*/
 /*-- General --------------------------------------*/
-html {
+body {
     animation: load 1.5s;
     scroll-behavior: smooth;
     background: #2D2D2D;
-    margin: 0 auto;
-    width: 98%;
+    margin: 0;
 }
 @keyframes load {
     0% {opacity: 0%;}
@@ -59,10 +58,10 @@ p{
 nav {
     margin-top: 0.8vh;
     position: fixed;
-    width: 98%;
     mix-blend-mode: exclusion;
     border-bottom: 0.5px solid #fff;
     padding-bottom: 10px;
+    width: 100%;
 }
 nav h2, nav p {
     font-size: 14px;
@@ -78,10 +77,9 @@ nav h2, nav p {
     text-align: center;
     mix-blend-mode: exclusion;
     position: fixed;
-    width: 98%;
+    width: 100%;
     bottom: 0;
     border-top: 0.5px solid #fff;
-    padding-top: 15px;
 }
 .info {
     text-align: right;
@@ -90,7 +88,7 @@ nav h2, nav p {
 
 
 .blank{
-    margin-bottom: 5vh;
+    margin: 1vh 1vw 15vh 1vw;
     overflow: visible;
 }
 
@@ -197,9 +195,8 @@ nav h2, nav p {
     h2 {font-size: 2.43vw}
     p {font-size: 2.43vw;}
     nav div ul {display: none;}
-    body, nav {width: 95%;}
     /* -- index -- */
-    .index1 {font-size: 3.5vw; padding: 1vh 0; width: 95%;}
+    .index1 h1{font-size: 3.2vw;}
     .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw;}
     .project1, .project2, .project3, .project4 {padding: 1vh 0;}
     .id_txt2{display: block; text-align: center; padding-top: 10px;}
@@ -218,7 +215,7 @@ nav h2, nav p {
     h1 {font-size: 1.736vw;}
     p {font-size: 0.972vw;}
     /* -- index -- */
-    .index1 {font-size: 3vw;}
+    .index1 h1{font-size: 3vw;}
     .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 35vw;}
     .project4 {
     margin-bottom: 15vh;}
