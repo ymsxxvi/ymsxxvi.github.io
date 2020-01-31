@@ -21,13 +21,13 @@
 body {
     animation: load 1.5s;
     scroll-behavior: smooth;
-    background: #757373;
+    background: #2D2D2D;
     margin: 0 auto;
     width: 98%;
 }
-.indexbody {
+/*--.indexbody {
     background-image: linear-gradient(#757373, #5E5353);
-}
+}--*/
 @keyframes load {
     0% {opacity: 0%;}
     100% {opacity: 100%}
