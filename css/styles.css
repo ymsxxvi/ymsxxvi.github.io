@@ -17,27 +17,24 @@
     font-style: italic;
 }
 /*-- fonts END --------------------------------------*/
-
-html {
-    animation: load 1s;
+/*-- General --------------------------------------*/
+body {
+    animation: load 1.5s;
     scroll-behavior: smooth;
+    background: #757373;
+    margin: 0 auto;
+    width: 98%;
+}
+.indexbody {
+    background-image: linear-gradient(#757373, #5E5353);
 }
 @keyframes load {
     0% {opacity: 0%;}
     100% {opacity: 100%}
 }
-body {
-    margin: 0;
-}
-
-
 a {
-    color: #000;
     text-decoration: none;
-}
-a:hover { 
-    color: #bcbcbc;
-    transition: .25s;
+    color: #fff;
 }
 
 .ortspan {
@@ -52,111 +49,88 @@ h2 {
     font-size: 0.972vw;
     font-weight: 400;
     font-family: publicsans, sans-serif;
+    line-height: 1.18vw;
+    margin: 0;
 }
 p{
     font-size: 0.972vw;
     font-family: ortica, serif;
     line-height: 1.18vw;
+    margin: 0;
 }
-
 /*-- navigation --------------------------------------*/
 nav {
-    display: block;
-    /*--background-color: #fff;--*/
-    font-size: 14px;
-    text-align: center;
-    /*--border-bottom: solid 1px;--*/
-    line-height: 18px;
+    margin-top: 0.8vh;
     position: fixed;
-    width: 100%;
-    font-family: publicsans, sans-serif;
-    z-index: 9999;
+    width: 98%;
+    mix-blend-mode: exclusion;
+    border-bottom: 0.5px solid #fff;
+    padding-bottom: 10px;
 }
-nav li {
-    list-style: none;
-}
-nav a, nav ul {
-    margin: .8vh 0;
-}
-nav h2 {
-    margin: auto;
+nav h2, nav p {
     font-size: 14px;
+    line-height: 18px;
+    z-index: 9999;
+    color: #fff;
 }
 /*-- navigation END --------------------------------------*/
-
-/*-------------------------------------- INDEX --------------------------------------*/
-
-
+/*-------------------------------------- index --------------------------------------*/
 .index1 {
-    margin-top: 75vh;
-    position: fixed;
-}
-.index_entry1 {
-    border-top: solid 1px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    background-color: #fff;
-    height: 100%;
-    margin: 0;
-    padding: 1.7vh 0;
     font-size: 1.736vw;
+    color: white;
+    text-align: center;
+    mix-blend-mode: exclusion;
+    position: fixed;
+    width: 98%;
+    bottom: 0;
+    border-top: 0.5px solid #fff;
+    padding-top: 15px;
 }
-
-.index2 {
-    height: 65vh;
-    padding-top: 5vh;
+.info {
+    text-align: right;
 }
-.index_entry2{
-    border-right: 1px solid #000;
-}
-/*-- index --------------------------------------*/
+/*-- index END --------------------------------------*/
 
 /*-- Projects --------------------------------------*/
+.project1 {
+    padding-top: 100vh;
+}
 .project1, .project2, .project3, .project4 {
-        padding: 15vh 0;
+    padding: 15vh 0;
 }
 .pr1_img, .pr2_img, .pr3_img, .pr4_img {
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
-    height: 25vw;
+    height: 35vw;
+    transition: 0.3s;
 }
-.id_txt{
-    text-align: center;
-    margin:0;
-    padding-top: 2vh;
+.id_txt1, .id_txt2{
+    color: #fff;
 }
-p.id_txt{
-    padding-top: .2vh;
+.id_txt2{
+    display: none;
 }
-
-
-/*-- Project1 --------------------------------------*/
-
+.blank{
+    height: 105vh;
+}
 .pr1_img {
     background-image: url(../images/SABF/SABF_head.jpg);
 }
-
-/*-- Project2 --------------------------------------*/
 .pr2_img {
     background-image: url(../images/DSH/DSH_head.jpg);
 }
-
-/*-- Project3 --------------------------------------*/
 .pr3_img {
     background-image: url(../images/ASHLAR/ASHLAR_head.jpg);
 }
-
-/*-- Project4 --------------------------------------*/
 .pr4_img {
     background-image: url(../images/MASK/MASK_head.jpg);
 }
 .project4 {
-    margin-bottom: 23vh;
+    margin-bottom: 8.5vh;
 }
 
-/*-- CASE STUDIES --------------------------------------*/
+/*-------------------------------------- CASE STUDIES --------------------------------------*/
 #ctr_txt {
     text-align: center;
     margin: 0 0 2.2vw 0;
@@ -188,6 +162,8 @@ p.id_txt{
 .blb div h2 {
     margin: 0 0 0.4vw 0;
 }
+
+
 /*-- SEOUL ART BOOK FAIR --------------------------------------*/
 .SABF_head {
     background-size: contain; 
@@ -223,12 +199,19 @@ p.id_txt{
 @media screen and (min-width: 320px) and (max-width:500px){
     /* -- main things -- */
     h1 {font-size: 4.34vw;}
+    h2 {font-size: 2.43vw}
     p {font-size: 2.43vw;}
     nav div ul {display: none;}
+    body, nav {width: 95%;}
     /* -- index -- */
-    .index1 {margin-top: 80vh;}
-    .index_entry1 {font-size: 3.5vw; padding: 1vh 0;}
+    .index1 {font-size: 3.5vw; padding: 1vh 0; width: 95%;}
     .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw;}
+    .project1, .project2, .project3, .project4 {padding: 1vh 0;}
+    .id_txt2{display: block; text-align: center; padding-top: 10px;}
+    .id_txt2 p{padding-top: 7px;}
+    .id_txt1{display: none;}
+    .project4 {
+    margin-bottom: 15vh;}
     /* -- SABF -- */
     .SABFintro {
         margin-top: 4vw;}
@@ -240,9 +223,10 @@ p.id_txt{
     h1 {font-size: 1.736vw;}
     p {font-size: 0.972vw;}
     /* -- index -- */
-    .index1 {margin-top: 77vh;}
-    .index_entry1 {padding: 1vh 0;}
+    .index1 {font-size: 3vw;}
     .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 35vw;}
+    .project4 {
+    margin-bottom: 15vh;}
     /* -- SABF -- */
     .SABFintro {
     margin-top: 8vh;}
