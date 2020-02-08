@@ -19,60 +19,133 @@
 /*-- fonts END --------------------------------------*/
 /*-- General --------------------------------------*/
 body {
-    animation: load 1.5s;
+    animation: load 2s;
     scroll-behavior: smooth;
     background: #2D2D2D;
     margin: 0;
+    font-family: ortica, serif;
+    color: #fff;
+    overflow-x: hidden;
 }
 @keyframes load {
-    0% {opacity: 0%;}
-    100% {opacity: 100%}
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
+
 a {
     text-decoration: none;
     color: #fff;
 }
-
 .ortspan {
     font-family: ortica, serif;
 }
 h1 {
-    font-size: 1.736vw;
-    font-weight: 400;
     font-family: publicsans, sans-serif;
+    font-weight: 400;
 }
 h2 {
-    font-size: 0.972vw;
+    font-size: 1.250vw;
     font-weight: 400;
     font-family: publicsans, sans-serif;
-    line-height: 1.18vw;
-    margin: 0;
+    margin: 0
+    
+}
+h3 {
+    font-family: publicsans, sans-serif;
+}
+h4 {
+    font-size: 1.250vw;
+    font-family: ortica, serif;
+    margin: 0 0 0.4vw 0;
 }
 p{
-    font-size: 0.972vw;
     font-family: ortica, serif;
-    line-height: 1.18vw;
-    margin: 0;
 }
+h3, p {
+    font-size: 0.972vw;
+    font-weight: 400;
+    line-height: 1.111vw;
+    margin: 0 0 0.5vw 0;
+}
+
+.vimeo {
+    z-index: -1;
+}
+
 /*-- navigation --------------------------------------*/
 nav {
-    margin-top: 10px;
+    padding-top: 10px;
     position: fixed;
     mix-blend-mode: exclusion;
     border-bottom: 0.5px solid #fff;
     padding-bottom: 10px;
     width: 100%;
+    top: 0;
 }
-nav h2, nav p {
-    font-size: 14px;
-    line-height: 18px;
+nav h3, nav p {
+    font-size: 0.972vw;
+    line-height: 1.250vw;
     z-index: 9999;
     color: #fff;
+    margin: 0;
+}
+.info {
+    text-align: right;
 }
 /*-- navigation END --------------------------------------*/
+
+/*-- FOOTER --------------------------------------*/
+
+.prefoot {
+    position: relative;
+    top: 6.1vw;
+    z-index: 99;
+}
+.prefoot_left{
+    text-align: right;
+}
+.prefoot_center {
+    text-align: center;
+}
+
+.footvenn {
+    z-index: -99;
+}
+.leftftvn, .rightftvn, .centerftvn {
+    height: 10vw;
+    width: 40vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: absolute;
+    overflow: hidden;
+    margin-bottom: 3vw;
+}
+.leftftvn {
+    left: 1vw;
+    
+}
+.rightftvn {
+    right: 1vw;
+}
+.centerftvn{
+    left: 30vw;
+    width: 40vw;
+}
+.index2 {
+    position: relative;
+    top: 12vw;
+    font-size: 0.8vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    border-top: 0.5px solid #fff;
+}
+/*-- FOOTER END --------------------------------------*/
+
 /*-------------------------------------- index --------------------------------------*/
 .index1 {
-    font-size: 1.736vw;
+    font-size: 0.8vw;
     color: white;
     text-align: center;
     mix-blend-mode: exclusion;
@@ -81,20 +154,18 @@ nav h2, nav p {
     bottom: 0;
     border-top: 0.5px solid #fff;
 }
-.info {
-    text-align: right;
-}
 /*-- index END --------------------------------------*/
 
 
-.blank{
+.blank, .blankleft, .blankright, .blankfoot{
     margin: 1vh 1vw 15vh 1vw;
     overflow: visible;
 }
 
+
 /*-- Projects --------------------------------------*/
 .project1, .project2, .project3, .project4 {
-    padding: 15vh 0;
+    padding: 5vh 0 20vh 0;
 }
 .pr1_img, .pr2_img, .pr3_img, .pr4_img {
     background-size: contain; 
@@ -105,6 +176,13 @@ nav h2, nav p {
 .id_txt1, .id_txt2{
     color: #fff;
 }
+.id_txt1 p {
+    margin-top: 0.5vw;
+}
+.id_txt1 h3 {
+    margin-top: 0.3vw;
+}
+
 .id_txt2{
     display: none;
 }
@@ -120,105 +198,173 @@ nav h2, nav p {
 .pr4_img {
     background-image: url(../images/MASK/MASK_head.jpg);
 }
-.project4 {
-    margin-bottom: 8.5vh;
+
+/*-- info --------------------------------------*/
+
+.blankright {
+    position: absolute;
+    top: 0;
+    right: 1vw;
 }
+.venn1, .venn2 {
+    text-anchor: middle;
+    fill: #fff;
+}
+.venn1 {
+    font-size: 0.972vw;
+}
+.venn2 {
+    font-size: 2.933vw;
+    display: none;
+}
+.blanktop, .blankbottom {
+    margin-top: 1vh;
+    overflow: visible;
+}
+.blankbottom {
+    position: absolute;
+    top: 35vw;
+}
+/*-- info END--------------------------------------*/
+
+
+
+
 
 /*-------------------------------------- CASE STUDIES --------------------------------------*/
 #ctr_txt {
-    text-align: center;
     margin: 0 0 2.2vw 0;
 }
-.blb_line{
-    border-right: 1px solid #000;
-    height: 100%;
-}
-.blb div h2, .blb div h1 {
-    text-align: center;
-}
 .blb {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
     height: auto;
-    margin: 3vw 0;
-    padding: 1.7vh 0;
-}
-.blb div h1 {
-    margin: 0 0 2.7vw 0 ;
-}
-#blb_h2 {
-    margin: 2.7vw 0 0.4vw 0 ;
-}
-.blb p {
-    margin: 0;
+    margin: 3vw 0 3vw 0;
+    padding: 1vw 0;
+    border-top: solid #fff 1px;
+    border-bottom: solid #fff 1px;
 }
 .blb div h2 {
-    margin: 0 0 0.4vw 0;
+    margin: 0 0 1vw 0 ;
 }
-
+#blb_h3 {
+    margin: 0.35vw 0 0.4vw 0 ;
+}
+.id_txt1 h3 {
+    margin: 0.4vw 0 0 0;
+}
+.assets div{
+    max-width: 2000px;
+    margin: auto;
+    margin-bottom: 3vw;
+}
+.spacer {
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    border: solid 1px #fff;
+}
+.introtxt {
+    margin: 2.50vw 0 1.75vw 0;
+}
 
 /*-- SEOUL ART BOOK FAIR --------------------------------------*/
 .SABF_head {
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 8vh;
+    margin-top: 8vw;
+    max-width: 2000px;
 }
-.sabf1 {
-    background-image: url(../images/SABF/SABF_head.jpg);
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 35vw;
+.brochure {
+    background-color: black;
 }
-.sabf_img1, .sabf_img2 {
-    background-size: contain; 
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 42vw;
-    margin-bottom: 3vw;
-}
-.sabf_img1 {
-    background-image: url(../images/SABF/SABFad_eng.gif);
-}
-.sabf_img2 {
-    background-image: url(../images/SABF/SABFad_kr.gif);
-}
-
 /* ---------------------- MEDIA QUERIES AHHHHH ---------------------- */
 
 
 /* ---------------------- Phone ---------------------- */
-@media screen and (min-width: 0) and (max-width:767px){
-    /* -- main things -- */
-    h1 {font-size: 4.34vw;}
-    h2 {font-size: 2.43vw}
-    p {font-size: 2.43vw;}
-    nav div ul {display: none;}
-    /* -- index -- */
-    .index1 h1{font-size: 3.2vw;}
+@media screen and (min-width: 0) and (max-width:500px){
+/* -- main things -- */
+    h2 {font-size: 3.733vw;}
+    h3, p, nav h3, nav p, h4 {font-size: 2.933vw; line-height: 3.467vw;}
+/* -- index -- */
+    .index1 h1 {font-size: 2.6vw;}
+    .index1 br {display: none;}
     .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw;}
-    .project1, .project2, .project3, .project4 {padding: 1vh 0;}
-    .id_txt2{display: block; text-align: center; padding-top: 10px;}
-    .id_txt2 p{padding-top: 7px;}
+    .project1, .project2, .project3, .project4 {padding: 3vh 0;}
+    .id_txt2{display: block; padding-top: 1.5vw;}
     .id_txt1{display: none;}
-    .project4 {
-    margin-bottom: 15vh;}
-    /* -- SABF -- */
-    .SABFintro {
-        margin-top: 4vw;}
+    .project4 {margin-bottom: 10vh;}
+    
+/*-- Footer --*/
+    .leftftvn, .rightftvn, .centerftvn {
+        height: 15vw;
+        margin-bottom: 10vw;
+        width: 55vw;
+    }
+    .centerftvn {
+        display: none;
+    }
+    .prefoot_center {
+        display: none;
+    }
+    .prefoot {
+        top: 10vw;
+    }
+    .index2 h1 {
+        font-size: 2.6vw;
+    }
+    .index2 {
+        top: 70px;
     }
 
-/* ---------------------- Tablet ---------------------- */
+/*-- INFO --*/
+    .venn2 {
+        display: inherit;
+    }
+    .venn1 {
+        display: none;
+    }
+/* -- Case studies -- */
+    .blb {
+        padding: 5vw 0 10vw 0;
+    }
+    .blb p, .blb h2 {
+        padding-bottom: 4vw;
+    }
+    .assets div{
+        padding: 0;
+    }
+/*-- SABF --*/
+    .SABF_head {height: 50vw; margin-top: 20vw; padding: 0;}
+    
+}
+/* ---------------------- Small Tablet ----------------------*/ 
+@media screen and (min-width: 501px) and (max-width:767px){
+    .index1 h1 {font-size: 2.9vw;}
+/*-- Footer --*/
+    .leftftvn, .rightftvn {
+        width: 53vw;
+    }
+    .centerftvn {
+        display: none;
+    }
+    .prefoot_center {
+        display: none;
+    }
+}
+
+/* ---------------------- Large Tablet ---------------------- */
 @media screen and (min-width: 768px) and (max-width:1366px){
     /* -- main things -- */
-    h1 {font-size: 1.736vw;}
-    p {font-size: 0.972vw;}
     /* -- index -- */
-    .index1 h1{font-size: 3.2vw;}
     .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 35vw;}
+    .index1 h1 {font-size: 1.45vw;}
+    .project1, .project2, .project3, .project4 {padding: 3vh 0;}
     .project4 {margin-bottom: 15vh;}
     /* -- SABF -- */
-    .SABFintro {
-    margin-top: 8vh;}
+    }
+}
+/* ---------------------- Big Chungus  ---------------------- */
+@media screen and (min-width: 1500px) and (max-width:4000px){
+    /* -- SABF -- */
+    .sabf_print_tix,.sabf_web_tix {
+    background-color: black;
+    height: 29vw;
+    }
 }
