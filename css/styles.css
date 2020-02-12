@@ -57,6 +57,7 @@ h4 {
     font-size: 1.250vw;
     font-family: ortica, serif;
     margin: 0 0 0.4vw 0;
+    line-height: 1.8vw;
 }
 p{
     font-family: ortica, serif;
@@ -64,7 +65,7 @@ p{
 h3, p {
     font-size: 0.972vw;
     font-weight: 400;
-    line-height: 1.111vw;
+    line-height: 1.35vw;
     margin: 0 0 0.5vw 0;
 }
 
@@ -97,6 +98,9 @@ nav h3, nav p {
 
 /*-- FOOTER --------------------------------------*/
 
+footer {
+    margin-top: 10vw;
+}
 .prefoot {
     position: relative;
     top: 6.1vw;
@@ -252,17 +256,15 @@ nav h3, nav p {
 .id_txt1 h3 {
     margin: 0.4vw 0 0 0;
 }
-.assets div{
+.assets {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.assets div {
     max-width: 2000px;
     margin: auto;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
 }
-.assets h3 {
-    margin-top: 3vw;
-    margin-bottom:2vw;
-    text-align: center;
-}
-
 .spacer {
     height: auto;
     width: 100%;
@@ -272,6 +274,13 @@ nav h3, nav p {
 .introtxt {
     margin: 2.50vw 0 1.75vw 0;
 }
+#a_txt {
+    margin-bottom: 1vw;
+}
+.assets h2{
+    margin-bottom: 0.5vw;
+}
+
 /*-- SEOUL ART BOOK FAIR --------------------------------------*/
 .SABF_head,.DSH_head,.ASHLAR_head {
     margin-top: 8vw;
@@ -289,8 +298,52 @@ nav h3, nav p {
     padding-bottom: 2vw;
     margin: 0 auto;
     text-align: center;
+    margin-top: 6vw;
 }
 /*-- DIGITAL SELF HARM --------------------------------------*/
+.mobi {
+   display: none; 
+}
+#dshimg {
+    margin-top: 6vw;
+}
+#dshimg h3 {
+    margin-top: 1vw;
+}
+#dshflow {
+    margin-bottom: 4vw;
+}
+#dshflowsm {
+    display: none;
+}
+#dshp{
+    padding-left: 2.5vw;
+}
+
+/*-- MASK --------------------------------------*/
+#maskh2, #maskh2last {
+    text-align: center;
+    margin-top: 0.5vw;
+}
+#maskh2last {
+    margin-bottom: 0;
+}
+#maskh2 {
+    margin-bottom: 8vw;
+}
+#maskimg {
+    margin-bottom: 0.5vw;
+}
+#maskintro {
+    margin-bottom: 6vw;
+}
+#maskintro h4 {
+    margin-top: 0.7vw;
+    padding-left: 2.5vw;
+}
+
+
+
 
 
 /* ---------------------- MEDIA QUERIES AHHHHH ---------------------- */
@@ -301,6 +354,10 @@ nav h3, nav p {
 /* -- main things -- */
     h2 {font-size: 3.733vw;}
     h3, p, nav h3, nav p, h4 {font-size: 2.933vw; line-height: 3.467vw;}
+    .assets {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 /* -- index -- */
     .index1 h1 {font-size: 2.6vw;}
     .index1 br {display: none;}
@@ -329,8 +386,7 @@ nav h3, nav p {
         font-size: 2.6vw;
     }
     .index2 {
-        top: 20vw;
-    }
+        top: 20vw;}
 
 /*-- INFO --*/
     .venn2 {
@@ -346,12 +402,37 @@ nav h3, nav p {
     .blb p, .blb h2 {
         padding-bottom: 4vw;
     }
-    .assets div{
+    .assets div {
         padding: 0;
+    }
+    .assets p{
+        padding-right: 2.5vw;
     }
 /*-- SABF --*/
     .SABF_head,.DSH_head,.ASHLAR_head {height: 50vw; margin-top: 20vw; padding: 0;
 }
+/*-- DSH --*/
+    .deski {display: none;}
+    .mobi {display: inherit;}
+    #dshvid {
+        margin-top: 5vw;
+    }
+    #dshflow {
+        display: none;}
+    #dshflowsm {
+        display: inherit;
+    }
+/*-- ASHLAR --*/
+    .ashlarlink,.dshlink {
+        width: 45vw;
+        padding-top: 3.5vw;
+    }
+/*-- MASK --*/
+
+    
+    
+    
+    
 /* ---------------------- Small Tablet ----------------------*/ 
 @media screen and (min-width: 501px) and (max-width:767px){
     .index1 h1 {font-size: 2.9vw;}
@@ -365,6 +446,7 @@ nav h3, nav p {
     .prefoot_center {
         display: none;
     }
+    .dshpng {display: none;}
 }
 
 /* ---------------------- Large Tablet ---------------------- */
@@ -375,8 +457,8 @@ nav h3, nav p {
     .index1 h1 {font-size: 1.45vw;}
     .project1, .project2, .project3, .project4 {padding: 3vh 0;}
     .project4 {margin-bottom: 15vh;}
-    /* -- SABF -- */
-    }
+    .dshpng {display: none;}
+
 }
 /* ---------------------- Big Chungus  ---------------------- */
 @media screen and (min-width: 1500px) and (max-width:4000px){
@@ -386,3 +468,4 @@ nav h3, nav p {
     height: 29vw;
     }
 }
+    
