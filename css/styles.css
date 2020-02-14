@@ -286,10 +286,51 @@ top: 0}
 }
 .itext1:before {
     content: "based in Toronto, Canada";
-    animation: itxt1 10s infinite;
     -webkit-animation: itxt1 10s infinite;
+    -moz-animation: itxt1 10s infinite;
+    -o-animation: itxt1 10s infinite;
+    animation: itxt1 10s infinite;
 }
 @keyframes itxt1 {
+    0% {content: "based in Toronto, Canada"; color: #fff;}
+    12.5% {content: "based in Toronto, Canada"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "focused in Branding"; color: #fff;}
+    45.8% {content: "focused in Branding"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that appreciates the classics"; color: #fff;}
+    79.1% {content: "that appreciates the classics"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "based in Toronto, Canada"; color: #fff;}
+    100% {color: "based in Toronto, Canada"; color: #fff;}
+}
+@-webkit-keyframes itxt1 {
+    0% {content: "based in Toronto, Canada"; color: #fff;}
+    12.5% {content: "based in Toronto, Canada"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "focused in Branding"; color: #fff;}
+    45.8% {content: "focused in Branding"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that appreciates the classics"; color: #fff;}
+    79.1% {content: "that appreciates the classics"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "based in Toronto, Canada"; color: #fff;}
+    100% {color: "based in Toronto, Canada"; color: #fff;}
+}
+@-moz-keyframes itxt1 {
+    0% {content: "based in Toronto, Canada"; color: #fff;}
+    12.5% {content: "based in Toronto, Canada"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "focused in Branding"; color: #fff;}
+    45.8% {content: "focused in Branding"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that appreciates the classics"; color: #fff;}
+    79.1% {content: "that appreciates the classics"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "based in Toronto, Canada"; color: #fff;}
+    100% {color: "based in Toronto, Canada"; color: #fff;}
+}
+@-o-keyframes itxt1 {
     0% {content: "based in Toronto, Canada"; color: #fff;}
     12.5% {content: "based in Toronto, Canada"; color: #fff;}
     16.65% {color: #2d2d2d;}
@@ -305,10 +346,51 @@ top: 0}
 
 .itext2:before {
     content: "from Seoul, South Korea";
-    animation: itxt2 10s infinite;
     -webkit-animation: itxt2 10s infinite;
+    -moz-animation: itxt2 10s infinite;
+    -o-animation: itxt2 10s infinite;
+    animation: itxt2 10s infinite;
 }
 @keyframes itxt2 {
+    0% {content: "from Seoul, South Korea"; color: #fff;}
+    12.5% {content: "from Seoul, South Korea"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "adept in Digital Design"; color: #fff;}
+    45.8% {content: "adept in Digital Design"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "from Seoul, South Korea"; color: #fff;}
+    100% {color: "from Seoul, South Korea"; color: #fff;}
+}
+@-webkit-keyframes itxt2 {
+    0% {content: "from Seoul, South Korea"; color: #fff;}
+    12.5% {content: "from Seoul, South Korea"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "adept in Digital Design"; color: #fff;}
+    45.8% {content: "adept in Digital Design"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "from Seoul, South Korea"; color: #fff;}
+    100% {color: "from Seoul, South Korea"; color: #fff;}
+}
+@-moz-keyframes itxt2 {
+    0% {content: "from Seoul, South Korea"; color: #fff;}
+    12.5% {content: "from Seoul, South Korea"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "adept in Digital Design"; color: #fff;}
+    45.8% {content: "adept in Digital Design"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "from Seoul, South Korea"; color: #fff;}
+    100% {color: "from Seoul, South Korea"; color: #fff;}
+}
+@-o-keyframes itxt2 {
     0% {content: "from Seoul, South Korea"; color: #fff;}
     12.5% {content: "from Seoul, South Korea"; color: #fff;}
     16.65% {color: #2d2d2d;}
