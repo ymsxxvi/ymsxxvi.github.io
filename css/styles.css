@@ -182,8 +182,9 @@ footer {
     top: 12vw;
 }
 .ftemail h2 {
-    border-top: 1px #fff solid;
-    padding: 0.5vw;
+    border-top: 0.5px #fff solid;
+    padding-bottom: 0.5vw;
+    padding-top: 0.2vw;
     text-align: center;
 }
 
