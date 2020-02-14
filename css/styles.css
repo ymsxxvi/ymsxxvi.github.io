@@ -265,10 +265,11 @@ top: 0}
 }
 .infovenn1,.infovenn2 {
     text-align: center;
-    padding: 24vw 0;
+    padding-top: 24.6vw;
+    padding-bottom: 22vw;
     width: 50vw;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 0.5px solid #fff;
     position: absolute;
     overflow: hidden;
 }
@@ -284,125 +285,76 @@ top: 0}
 .infovenn2 h3{
     margin-bottom: 0;
 }
-.itext1:before {
-    content: "based in Toronto, Canada";
-    -webkit-animation: itxt1 10s infinite;
-    -moz-animation: itxt1 10s infinite;
-    -o-animation: itxt1 10s infinite;
-    animation: itxt1 10s infinite;
+
+
+.infovenn1 p:nth-child(2), .infovenn1 p:nth-child(3), .infovenn1 p:nth-child(4), .infovenn2 h3:nth-child(2),.infovenn2 h3:nth-child(3),.infovenn2 h3:nth-child(4) {
+    position: relative;
+    -webkit-animation: infotxt 12.5s infinite;
+    -moz-animation: infotxt 12.5s infinite;
+    -ms-animation: infotxt 12.5s infinite;
+    -o-animation: infotxt 12.5s infinite;
+    animation: infotxt 12.5s infinite;
+    opacity: 0;
 }
-@keyframes itxt1 {
-    0% {content: "based in Toronto, Canada"; color: #fff;}
-    12.5% {content: "based in Toronto, Canada"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "focused in Branding"; color: #fff;}
-    45.8% {content: "focused in Branding"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that appreciates the classics"; color: #fff;}
-    79.1% {content: "that appreciates the classics"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "based in Toronto, Canada"; color: #fff;}
-    100% {color: "based in Toronto, Canada"; color: #fff;}
+.infovenn2 h3:nth-child(3),.infovenn1 p:nth-child(3) {
+    top: -1.3vw;
+    -webkit-animation-delay: 4.5s;
+    -moz-animation-delay: 4.5s;
+    -ms-animation-delay: 4.5s;
+    -o-animation-delay: 4.5s;
+    animation-delay: 4.5s;
 }
-@-webkit-keyframes itxt1 {
-    0% {content: "based in Toronto, Canada"; color: #fff;}
-    12.5% {content: "based in Toronto, Canada"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "focused in Branding"; color: #fff;}
-    45.8% {content: "focused in Branding"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that appreciates the classics"; color: #fff;}
-    79.1% {content: "that appreciates the classics"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "based in Toronto, Canada"; color: #fff;}
-    100% {color: "based in Toronto, Canada"; color: #fff;}
-}
-@-moz-keyframes itxt1 {
-    0% {content: "based in Toronto, Canada"; color: #fff;}
-    12.5% {content: "based in Toronto, Canada"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "focused in Branding"; color: #fff;}
-    45.8% {content: "focused in Branding"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that appreciates the classics"; color: #fff;}
-    79.1% {content: "that appreciates the classics"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "based in Toronto, Canada"; color: #fff;}
-    100% {color: "based in Toronto, Canada"; color: #fff;}
-}
-@-o-keyframes itxt1 {
-    0% {content: "based in Toronto, Canada"; color: #fff;}
-    12.5% {content: "based in Toronto, Canada"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "focused in Branding"; color: #fff;}
-    45.8% {content: "focused in Branding"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that appreciates the classics"; color: #fff;}
-    79.1% {content: "that appreciates the classics"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "based in Toronto, Canada"; color: #fff;}
-    100% {color: "based in Toronto, Canada"; color: #fff;}
+.infovenn2 h3:nth-child(4),.infovenn1 p:nth-child(4) {
+    top: -2.6vw;
+    -webkit-animation-delay: 8.5s;
+    -moz-animation-delay: 8.5s;
+    -ms-animation-delay: 8.5s;
+    -o-animation-delay: 8.5s;
+    animation-delay: 8.5s;
 }
 
-.itext2:before {
-    content: "from Seoul, South Korea";
-    -webkit-animation: itxt2 10s infinite;
-    -moz-animation: itxt2 10s infinite;
-    -o-animation: itxt2 10s infinite;
-    animation: itxt2 10s infinite;
+@keyframes infotxt {
+    0% {opacity: 0;}
+    4.15% {opacity: 1}
+    29.15% {opacity: 1}
+    37.45% {opacity: 0}
+    100% {opacity: 0;}
+    
 }
-@keyframes itxt2 {
-    0% {content: "from Seoul, South Korea"; color: #fff;}
-    12.5% {content: "from Seoul, South Korea"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "adept in Digital Design"; color: #fff;}
-    45.8% {content: "adept in Digital Design"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "from Seoul, South Korea"; color: #fff;}
-    100% {color: "from Seoul, South Korea"; color: #fff;}
+@-webkit-keyframes infotxt {
+    0% {opacity: 0;}
+    4.15% {opacity: 1}
+    29.15% {opacity: 1}
+    37.45% {opacity: 0}
+    100% {opacity: 0;}
+    
 }
-@-webkit-keyframes itxt2 {
-    0% {content: "from Seoul, South Korea"; color: #fff;}
-    12.5% {content: "from Seoul, South Korea"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "adept in Digital Design"; color: #fff;}
-    45.8% {content: "adept in Digital Design"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "from Seoul, South Korea"; color: #fff;}
-    100% {color: "from Seoul, South Korea"; color: #fff;}
+@-moz-keyframes infotxt {
+    0% {opacity: 0;}
+    4.15% {opacity: 1}
+    29.15% {opacity: 1}
+    37.45% {opacity: 0}
+    100% {opacity: 0;}
+    
 }
-@-moz-keyframes itxt2 {
-    0% {content: "from Seoul, South Korea"; color: #fff;}
-    12.5% {content: "from Seoul, South Korea"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "adept in Digital Design"; color: #fff;}
-    45.8% {content: "adept in Digital Design"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "from Seoul, South Korea"; color: #fff;}
-    100% {color: "from Seoul, South Korea"; color: #fff;}
+@-ms-keyframes infotxt {
+    0% {opacity: 0;}
+    4.15% {opacity: 1}
+    29.15% {opacity: 1}
+    37.45% {opacity: 0}
+    100% {opacity: 0;}
+    
 }
-@-o-keyframes itxt2 {
-    0% {content: "from Seoul, South Korea"; color: #fff;}
-    12.5% {content: "from Seoul, South Korea"; color: #fff;}
-    16.65% {color: #2d2d2d;}
-    20.8% {content: "adept in Digital Design"; color: #fff;}
-    45.8% {content: "adept in Digital Design"; color: #fff;}
-    49.95% {color: #2d2d2d;}
-    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
-    83.25% {color: #2d2d2d;}
-    87.4% {content: "from Seoul, South Korea"; color: #fff;}
-    100% {color: "from Seoul, South Korea"; color: #fff;}
+@-o-keyframes infotxt {
+    0% {opacity: 0;}
+    4.15% {opacity: 1}
+    29.15% {opacity: 1}
+    37.45% {opacity: 0}
+    100% {opacity: 0;}
+    
 }
+
+
 
 .infoassets {
     padding-top: 55vw;
@@ -628,17 +580,27 @@ top: 0}
         margin: auto 0;
     }
     .infovenn1, .infovenn2 {
-        padding: 20vw 0;
+        padding-top: 20vw;
+        padding-bottom: 11.6vw;
         width: 50vw;
         margin-top: 20vw;
-        height:10vw;
+    }
+    .infovenn1 {
+        padding-bottom: 15.8vw;
     }
     .infovenn p, .infovenn h3 {
         width: 40vw;
         margin: auto;
+        margin-bottom: 0;
+    }
+    .infovenn2 h3:nth-child(3),.infovenn1 p:nth-child(3) {
+        top: -4.2vw;
+    }
+    .infovenn2 h3:nth-child(4),.infovenn1 p:nth-child(4) {
+        top: -8.4vw;
     }
     .infoassets {
-        padding-top: 80vw;
+        padding-top: 85vw;
     }
     #ibrac {
     font-size: 7vw;
@@ -646,7 +608,9 @@ top: 0}
     #info2 div {
         margin-top: 5vw;
     }
-
+    #ip {
+        margin-top: 1.2vw;
+    }
 /* -- Play  -- */
 .plstf {
     margin-top: 20vw;
