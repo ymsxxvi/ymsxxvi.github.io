@@ -2,7 +2,9 @@
 /*-- fonts --------------------------------------*/
 @font-face {
     font-family: "ortica";
-    src: url(../fonts/ortica-light-webfont.woff)
+    src: url(../fonts/ortica-light-webfont.woff);
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: "publicsans";
@@ -49,36 +51,38 @@ a:hover,a h2:hover,a h4:hover, a h5:hover{
 }
 h1 {
     font-family: publicsans, sans-serif;
-    font-weight: 100;
+    font-weight: normal;
 }
 h2 {
     font-size: 1.250vw;
-    font-weight: 100;
+    font-weight: normal;
     font-family: publicsans, sans-serif;
     margin: 0
     
 }
 h3 {
     font-family: publicsans, sans-serif;
-    font-weight: 100;
+    font-weight: normal;
 }
 h4 {
     font-size: 1.250vw;
     font-family: ortica, serif;
     margin: 0 0 0.4vw 0;
     line-height: 1.8vw;
+    font-weight: normal;
 }
 h5 {
     font-size: 2vw;
     margin: 0;
     padding: 0;
     font-family: publicsans, sans-serif;
-    font-weight: 100;
+    font-weight: normal;
 }
 
 
 p{
     font-family: ortica, serif;
+    font-weight: normal;
 }
 h3, p {
     font-size: 0.972vw;
