@@ -36,22 +36,31 @@ a {
     text-decoration: none;
     color: #fff;
 }
+a:hover,a h2:hover,a h4:hover, a h5:hover{
+    color: rgba(255,255,255,0.5);
+    transition: 0.3s;
+}
+#nav1 a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+}
 .ortspan {
     font-family: ortica, serif;
 }
 h1 {
     font-family: publicsans, sans-serif;
-    font-weight: 400;
+    font-weight: 100;
 }
 h2 {
     font-size: 1.250vw;
-    font-weight: 400;
+    font-weight: 100;
     font-family: publicsans, sans-serif;
     margin: 0
     
 }
 h3 {
     font-family: publicsans, sans-serif;
+    font-weight: 100;
 }
 h4 {
     font-size: 1.250vw;
@@ -59,6 +68,15 @@ h4 {
     margin: 0 0 0.4vw 0;
     line-height: 1.8vw;
 }
+h5 {
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    font-family: publicsans, sans-serif;
+    font-weight: 100;
+}
+
+
 p{
     font-family: ortica, serif;
 }
@@ -103,8 +121,13 @@ footer {
 }
 .prefoot {
     position: relative;
-    top: 6.1vw;
+    top: 6.25vw;
     z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 0;
 }
 .prefoot_left{
     text-align: right;
@@ -146,6 +169,21 @@ footer {
     bottom: 0;
     border-top: 0.5px solid #fff;
 }
+.ftemail {
+    position: relative;
+    top: 12vw;
+}
+.ftemail h2 {
+    border-top: 1px #fff solid;
+    padding: 0.5vw;
+    text-align: center;
+}
+
+.simplefooter {
+    margin-top: 5vw;
+}
+.simplefooter .index2, .simplefooter .ftemail {
+top: 0}
 /*-- FOOTER END --------------------------------------*/
 
 /*-------------------------------------- index --------------------------------------*/
@@ -206,32 +244,103 @@ footer {
 
 /*-- info --------------------------------------*/
 
-.blankright {
+.infovenn {
+    margin-top: 1vw;
+    height: auto;
+}
+.infovenn1,.infovenn2 {
+    text-align: center;
+    padding: 24vw 0;
+    width: 50vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
     position: absolute;
-    top: 0;
+    overflow: hidden;
+}
+.infovenn1 {
+    left: 1vw;
+}
+.infovenn2 {
     right: 1vw;
 }
-.venn1, .venn2 {
-    text-anchor: middle;
-    fill: #fff;
+.infovenn1 p {
+    margin-bottom: 0;
 }
-.venn1 {
-    font-size: 0.972vw;
+.infovenn2 h3{
+    margin-bottom: 0;
 }
-.venn2 {
-    font-size: 2.933vw;
-    display: none;
+.itext1:before {
+    content: "based in Toronto, Canada";
+    animation: itxt1 10s infinite;
 }
-.blanktop, .blankbottom {
-    margin-top: 1vh;
-    overflow: visible;
+@keyframes itxt1 {
+    0% {content: "based in Toronto, Canada"; color: #fff;}
+    12.5% {content: "based in Toronto, Canada"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "focused in Branding"; color: #fff;}
+    45.8% {content: "focused in Branding"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that appreciates the classics"; color: #fff;}
+    79.1% {content: "that appreciates the classics"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "based in Toronto, Canada"; color: #fff;}
+    100% {color: "based in Toronto, Canada"; color: #fff;}
 }
-.blankbottom {
-    position: absolute;
-    top: 35vw;
-}
-/*-- info END--------------------------------------*/
 
+.itext2:before {
+    content: "from Seoul, South Korea";
+    animation: itxt2 10s infinite;
+}
+@keyframes itxt2 {
+    0% {content: "from Seoul, South Korea"; color: #fff;}
+    12.5% {content: "from Seoul, South Korea"; color: #fff;}
+    16.65% {color: #2d2d2d;}
+    20.8% {content: "adept in Digital Design"; color: #fff;}
+    45.8% {content: "adept in Digital Design"; color: #fff;}
+    49.95% {color: #2d2d2d;}
+    54.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    79.1% {content: "that strives for innovation and improvisation"; color: #fff;}
+    83.25% {color: #2d2d2d;}
+    87.4% {content: "from Seoul, South Korea"; color: #fff;}
+    100% {color: "from Seoul, South Korea"; color: #fff;}
+}
+
+.infoassets {
+    padding-top: 55vw;
+}
+.infoassets p, .infoassets h3 {
+    margin-bottom: 0;
+}
+#ibrac, #ip {
+    float: left;
+}
+#ibrac {
+    font-size: 2.3vw;
+}
+#ip {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    margin-bottom: 0;
+}
+.infoassets div {
+    margin-bottom: 1vw;
+}
+#info2 {
+    margin-top: 5vw;
+}
+/*--
+.funfact {
+    margin-top: 8vw;
+}
+.funfact h4 {
+    margin-bottom: 4vw;
+} --*/
+
+/*-- info END--------------------------------------*/
+/*-- PLAAAAAAAAAY --------------------------------------*/
+.plstf {
+    margin-top: 8vw;
+}
 
 
 
@@ -306,7 +415,7 @@ footer {
    display: none; 
 }
 #dshimg {
-    margin-top: 6vw;
+    margin-top: 0vw;
 }
 #dshimg h3 {
     margin-top: 1vw;
@@ -335,17 +444,19 @@ footer {
 #maskimg {
     margin-bottom: 0.5vw;
 }
-#maskintro {
-    margin-bottom: 6vw;
-}
-#maskintro h4 {
-    margin-top: 0.7vw;
-    padding-left: 2.5vw;
-}
 .maskintrosm {
     display: none;
 }
+#maskintro h2 {
+    margin-top: 0.18vw;
+}
+#maskintro h4 {
+    padding-left: 2vw;
+}
 
+#maskintro h2, #maskintro h4 {
+    display: inline;
+}
 
 
 
@@ -359,9 +470,10 @@ footer {
     h2 {font-size: 3.733vw;}
     h3, p, nav h3, nav p, h4 {font-size: 2.933vw; line-height: 3.467vw;} --*/
     
-    h2 {font-size: 4.4vw;}
-    h3, p, nav h3, nav p, h4 {font-size: 3.1vw; line-height: 4.2vw;} 
-    
+    h2, h4 {font-size: 4.4vw; line-height: 5.7vw;}
+    h3, p, nav h3, nav p{font-size: 3.1vw; line-height: 4.2vw;} 
+    h5 {font-size: 6vw;        
+    }
     .assets {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -389,20 +501,53 @@ footer {
     }
     .prefoot {
         top: 10.6vw;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 0;
     }
     .index2 h1 {
         font-size: 2.6vw;
     }
     .index2 {
         top: 20vw;}
+    .ftemail {
+        top: 20vw;
+    }
+    .ftemail h2{
+        padding: 1vw;    
+    }
+
 
 /*-- INFO --*/
-    .venn2 {
-        display: inherit;
+    .infovenn {
+        width: 100vw;
+        overflow-x: hidden;
+        margin: auto 0;
     }
-    .venn1 {
-        display: none;
+    .infovenn1, .infovenn2 {
+        padding: 20vw 0;
+        width: 50vw;
+        margin-top: 20vw;
+        height:10vw;
     }
+    .infovenn p, .infovenn h3 {
+        width: 40vw;
+        margin: auto;
+    }
+    .infoassets {
+        padding-top: 80vw;
+    }
+    #ibrac {
+    font-size: 7vw;
+    }
+    #info2 div {
+        margin-top: 5vw;
+    }
+
+/* -- Play  -- */
+.plstf {
+    margin-top: 20vw;
+}    
 /* -- Case studies -- */
     .blb {
         padding: 5vw 0 10vw 0;
@@ -417,7 +562,8 @@ footer {
         padding-right: 2.5vw;
     }
 /*-- SABF --*/
-    .SABF_head,.DSH_head,.ASHLAR_head {height: 50vw; margin-top: 20vw; padding: 0;
+    .SABF_head,.DSH_head,.ASHLAR_head {
+        margin-top: 22vw; padding: 0;
 }
 /*-- DSH --*/
     .deski {display: none;}
@@ -430,6 +576,11 @@ footer {
         display: none;}
     #dshflowsm {
         display: inherit;
+        margin-bottom: 4vw;
+        height: inherit;
+    }
+    #dshp {
+        margin-top: 2vw;
     }
 /*-- ASHLAR --*/
     .ashlarlink,.dshlink {
@@ -443,12 +594,15 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 57vw;
+        height: 40vw;
         display: inherit;
         margin-bottom: 2vh;
     }
     .maskintrolg {
         display: none;
+    }
+    #maskintro h2 {
+    margin-top: 0;
     }
     
     
@@ -467,6 +621,8 @@ footer {
     .prefoot_center {
         display: none;
     }
+    
+    
     .dshpng {display: none;}
 }
 
@@ -478,6 +634,8 @@ footer {
     .index1 h1 {font-size: 1.45vw;}
     .project1, .project2, .project3, .project4 {padding: 3vh 0;}
     .project4 {margin-bottom: 15vh;}
+    
+    
     .dshpng {display: none;}
 
 }
