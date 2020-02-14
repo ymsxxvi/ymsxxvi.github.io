@@ -2,17 +2,17 @@
 /*-- fonts --------------------------------------*/
 @font-face {
     font-family: "ortica";
-    src: url(../fonts/Ortica-Light.otf)
+    src: url(../fonts/ortica-light-webfont.woff)
 }
 @font-face {
     font-family: "publicsans";
-    src: url(../fonts/PublicSans-Light.otf);
+    src: url(../fonts/publicsans-light-webfont.woff);
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: "publicsans";
-    src: url(../fonts/PublicSans-Lightitalic.otf);
+    src: url(../fonts/publicsans-light-webfont.woff);
     font-weight: normal;
     font-style: italic;
 }
@@ -107,7 +107,11 @@ nav h3, nav p {
     line-height: 1.250vw;
     z-index: 9999;
     color: #fff;
+    padding: 0;
     margin: 0;
+}
+nav p {
+    margin-top: 0.1vw;
 }
 .info {
     text-align: right;
@@ -471,7 +475,6 @@ top: 0}
     h3, p, nav h3, nav p, h4 {font-size: 2.933vw; line-height: 3.467vw;} --*/
     
     h2, h4 {font-size: 4.4vw; line-height: 5.7vw;}
-    h4 {letter-spacing: 0;}
     h3, p, nav h3, nav p{font-size: 3.1vw; line-height: 4.2vw;} 
     h5 {font-size: 6vw;        
     }
