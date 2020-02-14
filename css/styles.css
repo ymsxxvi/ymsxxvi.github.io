@@ -287,6 +287,7 @@ top: 0}
 .itext1:before {
     content: "based in Toronto, Canada";
     animation: itxt1 10s infinite;
+    -webkit-animation: itxt1 10s infinite;
 }
 @keyframes itxt1 {
     0% {content: "based in Toronto, Canada"; color: #fff;}
@@ -305,6 +306,7 @@ top: 0}
 .itext2:before {
     content: "from Seoul, South Korea";
     animation: itxt2 10s infinite;
+    -webkit-animation: itxt2 10s infinite;
 }
 @keyframes itxt2 {
     0% {content: "from Seoul, South Korea"; color: #fff;}
