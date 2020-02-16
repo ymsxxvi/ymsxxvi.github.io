@@ -152,7 +152,7 @@ footer {
     height: 10vw;
     width: 40vw;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 0.5px solid #fff;
     position: absolute;
     overflow: hidden;
     margin-bottom: 3vw;
@@ -207,6 +207,7 @@ top: 0}
     bottom: 0;
     border-top: 0.5px solid #fff;
 }
+
 /*-- index END --------------------------------------*/
 
 
@@ -289,28 +290,28 @@ top: 0}
 
 .infovenn1 p:nth-child(2), .infovenn1 p:nth-child(3), .infovenn1 p:nth-child(4), .infovenn2 h3:nth-child(2),.infovenn2 h3:nth-child(3),.infovenn2 h3:nth-child(4) {
     position: relative;
-    -webkit-animation: infotxt 12.5s infinite;
-    -moz-animation: infotxt 12.5s infinite;
-    -ms-animation: infotxt 12.5s infinite;
-    -o-animation: infotxt 12.5s infinite;
-    animation: infotxt 12.5s infinite;
+    -webkit-animation: infotxt 9s infinite;
+    -moz-animation: infotxt 9s infinite;
+    -ms-animation: infotxt 9s infinite;
+    -o-animation: infotxt 9s infinite;
+    animation: infotxt 9s infinite;
     opacity: 0;
 }
 .infovenn2 h3:nth-child(3),.infovenn1 p:nth-child(3) {
     top: -1.3vw;
-    -webkit-animation-delay: 4.5s;
-    -moz-animation-delay: 4.5s;
-    -ms-animation-delay: 4.5s;
-    -o-animation-delay: 4.5s;
-    animation-delay: 4.5s;
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    animation-delay: 3s;
 }
 .infovenn2 h3:nth-child(4),.infovenn1 p:nth-child(4) {
     top: -2.6vw;
-    -webkit-animation-delay: 8.5s;
-    -moz-animation-delay: 8.5s;
-    -ms-animation-delay: 8.5s;
-    -o-animation-delay: 8.5s;
-    animation-delay: 8.5s;
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
 }
 
 @keyframes infotxt {
@@ -405,8 +406,8 @@ top: 0}
     height: auto;
     margin: 3vw 0 3vw 0;
     padding: 1vw 0;
-    border-top: solid #fff 1px;
-    border-bottom: solid #fff 1px;
+    border-top: solid #fff 0.5px;
+    border-bottom: solid #fff 0.5px;
 }
 .blb div h2 {
     margin: 0 0 1vw 0 ;
@@ -427,12 +428,13 @@ top: 0}
 .assets div {
     margin-bottom: 4vw;
 }
+/*-- 
 .spacer {
     height: auto;
     width: 100%;
     border-radius: 50%;
-    border: solid 1px #fff;
-}
+    border: solid 0.5px #fff;
+} --*/
 .introtxt {
     margin: 2.50vw 0 1.75vw 0;
 }
@@ -453,7 +455,7 @@ top: 0}
 }
 /*-- ASHLAR --------------------------------------*/
 .ashlarlink,.dshlink {
-    border: 1px solid #fff;
+    border: 0.5px solid #fff;
     border-radius: 50%;
     width: 15vw;
     padding-top: 2vw;
@@ -481,7 +483,12 @@ top: 0}
 #dshp{
     padding-left: 2.5vw;
 }
-
+#dsh2,#dsh3 {
+    margin-top: 5vw;
+}
+#dsh3 {
+    padding-bottom: 1vw;
+}
 /*-- MASK --------------------------------------*/
 #maskh2, #maskh2last {
     text-align: center;
@@ -498,16 +505,6 @@ top: 0}
 }
 .maskintrosm {
     display: none;
-}
-#maskintro h2 {
-    margin-top: 0.18vw;
-}
-#maskintro h4 {
-    padding-left: 2vw;
-}
-
-#maskintro h2, #maskintro h4 {
-    display: inline;
 }
 
 
@@ -530,9 +527,7 @@ top: 0}
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    nav p{
-    margin-top: 0.68vw;
-}
+    nav p{margin-top: 0.68vw;}
 /* -- index -- */
     .index1 h1 {font-size: 2.6vw;}
     .index1 br {display: none;}
@@ -584,9 +579,7 @@ top: 0}
         padding-bottom: 11.6vw;
         width: 50vw;
         margin-top: 20vw;
-    }
-    .infovenn1 {
-        padding-bottom: 15.8vw;
+        height: 18vw;
     }
     .infovenn p, .infovenn h3 {
         width: 40vw;
@@ -597,7 +590,7 @@ top: 0}
         top: -4.2vw;
     }
     .infovenn2 h3:nth-child(4),.infovenn1 p:nth-child(4) {
-        top: -8.4vw;
+        top: -8vw;
     }
     .infoassets {
         padding-top: 85vw;
