@@ -25,6 +25,7 @@
     <link rel="icon" type="image/png" href="images/favicon/16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="images/favicon/32x32.png" sizes="32x32" />
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
   
@@ -67,23 +68,22 @@
         </div>
     </div>
 </div>
+    
 <svg width="98vw" height="98vh" class="blank" >
   <ellipse cx="50%" cy="50%" rx="50%" ry="50%" stroke="#fff" stroke-width="1" fill="none"/>
 </svg>
 
 <div class="container-fluid">
+<div class="project0"></div>
 <div class="project1 row">
-    <div class="id_txt1 col-xs-2">
+    <div class="id_txt1 col-xs-8 col-sm-2">
         <h2>SEOUL ART BOOK FAIR</h2>
     </div>
-    <div class="id_txt1 col-xs-2">
+    <div class="id_txt1 col-xs-4 col-sm-2">
         <h3>2019</h3>
         <p>Branding<br>Motion<br>Web Design</p>
     </div>
-<a href="seoulartbookfair.html" class="pr1_img col-xs-12 col-sm-offset-1 col-sm-7"></a>
-    <h2 class="id_txt2 col-xs-12">SEOUL ART BOOK FAIR</h2>
-    <p class="id_txt2 col-xs-6">2019</p>
-    <p class="id_txt2 col-xs-6">Branding<br>Motion<br>Web Design</p>
+<a href="seoulartbookfair.html" class="pr1_img col-xs-12 col-sm-8"></a>
 </div>
 
 <div class="project2 row">
@@ -94,7 +94,7 @@
         <h3>2019</h3>
         <p>Web Design<br>Motion<br>Infographic</p>
     </div>
-<a href="digitalselfharm.html" class="pr2_img col-xs-12 col-sm-offset-1 col-sm-7" ></a>
+<a href="digitalselfharm.html" class="pr2_img col-xs-12 col-sm-8" ></a>
     <h2 class="id_txt2 col-xs-12">DIGITAL SELF HARM</h2>
     <p class="id_txt2 col-xs-6">2019</p>
     <p class="id_txt2 col-xs-6">Web Design<br>Motion<br>Infographic</p>
@@ -108,7 +108,7 @@
         <h3>2019</h3>
         <p>Typeface<br>Web Design<br>Motion</p>
     </div>
-<a href="ashlar.html" class="pr3_img col-xs-12 col-sm-offset-1 col-sm-7" ></a>
+<a href="ashlar.html" class="pr3_img col-xs-12 col-sm-8" ></a>
     <h2 class="id_txt2 col-xs-12">ASHLAR</h2>
     <p class="id_txt2 col-xs-6">2019</p>
     <p class="id_txt2 col-xs-6">Typeface<br>Web Design<br>Motion</p>
@@ -122,12 +122,27 @@
         <h3>2019</h3>
         <p>Multiples<br>3D Design</p>
     </div>
-<a href="vulnerability.html" class="pr4_img col-xs-12 col-sm-offset-1 col-sm-7" ></a>
+<a href="vulnerability.html" class="pr4_img col-xs-12 col-sm-8" ></a>
     <h2 class="id_txt2 col-xs-12">VULNERABILITY</h2>
     <p class="id_txt2 col-xs-6">2019</p>
     <p class="id_txt2 col-xs-6">Multiples<br>3D Design</p>
 </div>
 </div>
 
+    
+    
+    
+    
+<script>
+    $(window).on("scroll", function() {
+    var w = $(window).height()*0.98;
+        //this is 100%vh
+    var c = w - Math.min(w, $(document).scrollTop());
+        //this scrolls and reduces at the same time
+    $(".blank").height(c);
+        //assigns new height to ".blank"
+});
+</script>
+    
 </body>
 </html>
