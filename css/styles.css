@@ -211,11 +211,15 @@ top: 0}
 /*-- index END --------------------------------------*/
 
 
-.blank, .blankleft, .blankright, .blankfoot{
-    margin: 1vh 1vw 15vh 1vw;
+.blank{
+    margin: 1vh 1vw;
     overflow: visible;
+    position: fixed;
 }
 
+.project0 {
+    height: 115vh;
+}
 
 /*-- NAV --*/
 
@@ -224,7 +228,7 @@ top: 0}
 
 /*-- Projects --------------------------------------*/
 .project1, .project2, .project3, .project4 {
-    padding: 5vh 0 20vh 0;
+    padding: 5vh 0 25vh 0;
 }
 .pr1_img, .pr2_img, .pr3_img, .pr4_img {
     background-size: contain; 
@@ -549,6 +553,7 @@ top: 0}
     nav p{margin-top: 0.68vw;}
     #indexnav {
         mix-blend-mode: exclusion;
+        background-color: rgba(0,0,0,0);
     }
     nav{
         mix-blend-mode: normal;
@@ -559,8 +564,8 @@ top: 0}
     .index1 br {display: none;}
     .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw;}
     .project1, .project2, .project3, .project4 {padding: 3vh 0;}
-    .id_txt2{display: block; padding-top: 1.5vw;}
-    .id_txt1{display: none;}
+/*-- .id_txt2{display: block; padding-top: 1.5vw;}
+    .id_txt1{display: none;} --*/
     .project4 {margin-bottom: 10vh;}
     
 /*-- Footer --*/
