@@ -398,7 +398,9 @@ top: 0}
 .plstf {
     margin-top: 8vw;
 }
-
+.plstf img{
+    margin-bottom: 1vw;
+}
 
 
 
@@ -562,11 +564,12 @@ top: 0}
 /* -- index -- */
     .index1 h1 {font-size: 2.6vw;}
     .index1 br {display: none;}
-    .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw;}
-    .project1, .project2, .project3, .project4 {padding: 3vh 0;}
+    .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw; margin-top: 3vh}
+    .project1, .project2, .project3, .project4 {padding: 8vh 0;}
+    .project0 {height: 95vh;}
 /*-- .id_txt2{display: block; padding-top: 1.5vw;}
     .id_txt1{display: none;} --*/
-    .project4 {margin-bottom: 10vh;}
+    .project4 {margin-bottom: 15vh;}
     
 /*-- Footer --*/
     .leftftvn, .rightftvn, .centerftvn {
