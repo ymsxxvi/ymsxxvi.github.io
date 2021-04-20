@@ -230,7 +230,7 @@ top: 0}
 .project1, .project2, .project3, .project4 {
     padding: 5vh 0 25vh 0;
 }
-.pr1_img, .pr2_img, .pr3_img, .pr4_img {
+.pr1_img, .pr2_img, .pr3_img, .pr4_img, .pr5_img, .pr6_img{
     background-size: contain; 
     background-repeat: no-repeat;
     background-position: top center;
@@ -260,6 +260,12 @@ top: 0}
 }
 .pr4_img {
     background-image: url(../images/MASK/MASK_head.jpg);
+}
+.pr5_img {
+    background-image: url(../comingsoon/metamorphosis_cover.jpg);
+}
+.pr6_img {
+    background-image: url(../comingsoon/iryomw_cover.jpg);
 }
 
 /*-- info --------------------------------------*/
@@ -564,7 +570,7 @@ top: 0}
 /* -- index -- */
     .index1 h1 {font-size: 2.6vw;}
     .index1 br {display: none;}
-    .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 45vw; margin-top: 3vh}
+    .pr1_img, .pr2_img, .pr3_img, .pr4_img, .pr5_img, .pr6_img{height: 45vw; margin-top: 3vh}
     .project1, .project2, .project3, .project4 {padding: 8vh 0;}
     .project0 {height: 95vh;}
 /*-- .id_txt2{display: block; padding-top: 1.5vw;}
@@ -734,7 +740,7 @@ top: 0}
 @media screen and (min-width: 768px) and (max-width:1366px){
     /* -- main things -- */
     /* -- index -- */
-    .pr1_img, .pr2_img, .pr3_img, .pr4_img {height: 35vw;}
+    .pr1_img, .pr2_img, .pr3_img, .pr4_img, .pr5_img, .pr6_img{height: 35vw;}
     .index1 h1 {font-size: 1.45vw;}
     .project1, .project2, .project3, .project4 {padding: 3vh 0;}
     .project4 {margin-bottom: 15vh;}
