@@ -4,11 +4,11 @@ body {
 }
 
 div {
-   margin: auto;
+    margin: auto;
     width: 50%;
     
 }
 p {
-    font-size: 10vw;
+    font-size: 5vw;
     text-align: center;
 }
